@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ForegroundExplanation">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/why_we_need_to_keep_this_notifcation_active"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="1) The latest Android OS Versions are not allowing the apps to run in background, as they are concerned much about battery drain.\n\n2) In order for the PTM Security App to Authorise every login, we have enabled this On-Going Notification, which allows the app to stay active in background.\n\n3) Hence, you might see this Notification active all the time. Also, the app doesn't eat away your battery, as it doesn't perform any complex operations.\n\n4) However, you can long click on notification and toggle the Switch displayed to remove the notification."
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/roundrect"
+        android:onClick="goToApp"
+        android:text="@string/go_to_app"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+</RelativeLayout>

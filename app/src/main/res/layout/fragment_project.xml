@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Project">
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/table_border"
+        android:hint="Search Project "
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/edit_search"
+        android:background="@drawable/roundrect"
+        android:padding="5dp"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_margin="8dp"
+        android:background="@drawable/table_border">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/project_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddressBook">
+
+  <EditText
+      android:visibility="gone"
+      android:padding="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="10dp"
+      android:background="@drawable/table_border"
+      android:hint="Search address"
+      android:id="@+id/edit_search"
+      android:layout_width="280dp"
+      android:layout_height="50dp"/>
+    <Button
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+         android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:text="Search"
+        android:background="@drawable/roundrect"
+        android:layout_toRightOf="@+id/edit_search"
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/table_border"
+        android:layout_below="@+id/search"
+        android:layout_margin="8dp">
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="wrap_content"
+           android:id="@+id/address_list"
+           android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+</RelativeLayout>

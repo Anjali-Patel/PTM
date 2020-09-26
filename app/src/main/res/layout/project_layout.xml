@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/headRelLay15"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="1"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/short_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr1"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="1"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/prj_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr2"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="2"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cat_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr3"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="3"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/prj_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr4"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="4"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/reqst_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr5"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay6"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="5"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/status_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr6"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay7"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="6"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/reminder_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr7"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr7"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay8"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="7"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/prj_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr8"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr8"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay10"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="8"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/customer_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr10"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay11"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="9"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/prj_lead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr11"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay12"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="10"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/image_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <com.ptm.security.util.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/upArr9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr9"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr9"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay13"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="11"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/about_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr13"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr13"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr13"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headRelLay14"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_column="12"
+        android:background="@drawable/table_border"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upArr14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:layout_toStartOf="@+id/downArr14"
+            android:src="@drawable/up_arr"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/downArr14"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/down_arr"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</TableRow>

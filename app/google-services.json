@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "3215333861",
+    "firebase_url": "https://ptm-security.firebaseio.com",
+    "project_id": "ptm-security",
+    "storage_bucket": "ptm-security.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3215333861:android:ea0ec8679fcd3ebdd8770c",
+        "android_client_info": {
+          "package_name": "com.ptm.security"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3215333861-5oam9mckshah2ks7ukvi992b0tnu904p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbIJLit9zDqkwnXMWp4UGd_W3ncuey1Fc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3215333861-5oam9mckshah2ks7ukvi992b0tnu904p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

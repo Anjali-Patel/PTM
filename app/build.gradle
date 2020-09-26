@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+    signingConfigs {
+        myreleaseconfig {
+            keyAlias 'key0'
+            keyPassword 'PtmSecurity123'
+            storeFile file('/Users/nikhilreddy/Documents/Android/keystores/PtmSecurity')
+            storePassword 'PtmSecurity123'
+        }
+    }
+    defaultConfig {
+        applicationId "com.ptm.security"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        signingConfig signingConfigs.myreleaseconfig
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+        exclude 'META-INF/INDEX.LIST'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0-alpha02' //Material
+    implementation 'com.android.volley:volley:1.1.1' //Volley
+    implementation 'com.google.firebase:firebase-messaging:20.2.4' //FCM
+    implementation 'com.google.firebase:firebase-analytics:17.5.0' //Analytics
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.viewpager:viewpager:1.0.0'//Crashlytics
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "com.cleveroad:adaptivetablelayout:1.1.1"
+    implementation "com.github.bumptech.glide:glide:4.11.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.7.1"
+}
+apply plugin: 'io.michaelrocks.paranoid'
